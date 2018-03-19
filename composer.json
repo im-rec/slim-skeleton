@@ -1,0 +1,33 @@
+{
+	"name": "rian/skeleton-slim",
+    "description": "Slim 3 HMVC Skeleton",
+    "keywords": ["HMVC", "slim"],
+    "homepage": "https://slimapi.local",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rian Eka Cahya",
+            "email": "rian.eka.cahya@gmail.com",
+            "homepage": "https://slimapi.local"
+        }
+    ],
+    "require": {
+    	"php": ">= 7.0",
+		"slim/slim": "3.9.*",
+		"vlucas/phpdotenv": "^2.4",
+		"dopesong/slim-whoops": "^2.2",
+		"guzzlehttp/guzzle": "^6.3",
+		"league/fractal": "^0.17.0",
+		"respect/validation": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/v1/",           
+            "Lib\\": "lib/",
+            "Bootstrap\\": "bootstrap/"
+        },
+        "files": [
+          "helper/helper.php"
+        ]
+    }
+}
